@@ -1,0 +1,31 @@
+{
+  "name": "bloom-asteroids",
+  "version": "1.0.0",
+  "description": "Simple implementation of a multiplayer Asteroids game.",
+  "main": "index.js",
+  "scripts": {
+    "start":
+      "concurrently --kill-others 'NODE_ENV=development npx webpack --watch' 'npx nodemon index.js'"
+  },
+  "author": "Feliciano Santana <fsfelicianosantana@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "nedb": "^1.8.0",
+    "raf": "^3.4.0",
+    "ws": "^5.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ignore": ["data/*"]
+  }
+}
