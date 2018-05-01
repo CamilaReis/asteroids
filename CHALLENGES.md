@@ -1,44 +1,24 @@
-# Challenges
+# For detailed instructions to each challenge, check https://github.com/bloomstudios/asteroids/wiki/Challenges
+# To ask for clarifications, create a new issue at https://github.com/bloomstudios/asteroids/issues/new
 
-> TODO: Add relevant files for each task
+* [ ] Remember me (+100 points)
+* [ ] Logout (+100 points)
+* [ ] Prevent players from leaving the screen (+100 points)
+* [ ] Add an option for players to pick their color (+100 points)
+* [ ] Add a cooldown for shooting (+100 points)
+  * [ ] Store the player color preference on the server (+250 points)
+* [ ] Add a score for each player (+100 points)
+  * [ ] Add an all-time leaderboard to the login page (+100 points)
+  * [ ] Add an in-game realtime scoreboard (+100 points)
 
-## Easy Challenges (100 points each)
+* [ ] Signup page (+200 points)
+  * [ ] Add an username field (+300 points)
+* [ ] Make players spawn in different points (+200 points)
+* [ ] Increase the size of the game world (+200 points)
+* [ ] Add Health for all ships (+200 points)
+* [ ] Add asteroids (+200 points)
+  * [ ] Make asteroids split up when you shoot them (+400 points)
+* [ ] Disconnect other screen if player tries to play with the same account (+200 points)
 
-### Authentication
-
-* [ ] Remember me
-* [ ] Logout
-
-### Gameplay
-
-* [ ] Make it so that ships can't get out of the map
-* [ ] Add an option for ships to pick their color
-* [ ] Add a minimum delay for ships to shoot
-* [ ] Add a score for each player
-
-## Normal Challenges (200 points each)
-
-### Authentication
-
-* [ ] Signup page
-* [ ] Disconnect other screen if player tries to play with the same account
-
-### Gameplay
-
-* [ ] Let players spawn in different places
-* [ ] Increase the size of the game world (remember to let the camera move)
-* [ ] Add a realtime scoreboard
-* [ ] Add Health for all ships and asteroids (and add a bar)
-* [ ] Add asteroids
-
-## Hard Challenges (500 points each)
-
-### Authentication
-
-* [ ] Send e-mail with reset link on Forgot my password
-
-### Gameplay
-
-* [ ] Add an all-time leaderboard to the homepage
-* [ ] Add a weapon whose bullets follow an enemy player (and add an option to let users switch)
-* [ ] Make asteroids split up when destroyed
+* [ ] Send e-mail with reset link on Forgot my password (+500 points)
+* [ ] Add a weapon that follows enemies and asteroids (+500 points)
