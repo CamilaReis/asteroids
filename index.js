@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const nedb = require("nedb");
-const bcrypt = require("bcrypt");
+const crypto = require("crypto");
 const { promisify } = require("util");
 const connection = require("./server/connection");
 const app = express();
@@ -20,7 +20,11 @@ app.use(express.static("www"));
 app.post("/api/login", async (req, res) => {
   const { email, password } = req.body;
   const user = await promisify(Users.findOne.bind(Users))({ email });
-  if (user && (await bcrypt.compare(password, user.password))) {
+  const hashedPassword = crypto
+    .createHmac("sha256", process.env.HASH_SECRET)
+    .update(password)
+    .digest("hex");
+  if (user && hashedPassword === user.password) {
     return res.json({
       user: { email, password },
       token: await jwt.sign({ id: 1 }, process.env.JWT_SECRET)
